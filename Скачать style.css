@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://cdn.wallpapersafari.com/61/13/LZZyUN.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #eee;
+}
+
+header, nav, section, footer {
+  background-color: rgba(0, 0, 0, 0.6); /* Прозрачный чёрный фон */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #0ff;
+  text-decoration: none;
+}
+
+.tank-list {
+  display: flex;
+  gap: 15px;
+}
+
+.tank-card {
+  background-color: #333;
+  padding: 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+form input, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #0a0;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
