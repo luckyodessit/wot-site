@@ -54,31 +54,19 @@
 
 <section id="contact">
   <h2>📬 Связаться с нами</h2>
-  <form id="contact-form">
-    <input type="text" name="user_name" placeholder="Ваше имя" required>
-    <input type="email" name="user_email" placeholder="Ваш email" required>
-    <textarea name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+  <form action="https://formsubmit.co/artem.more03@gmail.com" method="POST">
+    <!-- антибот -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- редирект после отправки -->
+    <input type="hidden" name="_next" value="https://luckyodessit.github.io/wot-site/thank-you.html">
+
+    <input type="text" name="Имя" placeholder="Ваше имя" required>
+    <input type="email" name="Email" placeholder="Ваш email" required>
+    <textarea name="Сообщение" rows="5" placeholder="Ваше сообщение" required></textarea>
     <button type="submit">Отправить</button>
   </form>
 </section>
-
-<!-- Подключаем EmailJS -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("ВАШ_PUBLIC_KEY"); // ← Вставь сюда свой public_key
-  })();
-
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    emailjs.sendForm("ВАШ_SERVICE_ID", "ВАШ_TEMPLATE_ID", this)
-      .then(function() {
-        alert("✅ Сообщение успешно отправлено!");
-      }, function(error) {
-        alert("❌ Ошибка отправки: " + error.text);
-      });
-  });
-</script>
 
     <section id="join">
        <h2>💥 Присоединяйся к JAGUAR CLUB</h2>
