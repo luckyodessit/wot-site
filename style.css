@@ -59,3 +59,13 @@ form button {
 footer {
   text-align: center;
 }
+
+.quotes {
+  list-style-type: "🔥 ";
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.quotes li {
+  margin-bottom: 10px;
+}
