@@ -61,10 +61,6 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
-  background-color: #ff3333;
-}
-
 footer {
   text-align: center;
 }
