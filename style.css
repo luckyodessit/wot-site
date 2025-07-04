@@ -94,3 +94,87 @@ footer {
 .join-button:hover {
   background-color: #ff3333;
 }
+
+/* Общая адаптация */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  word-wrap: break-word;
+}
+
+/* Контейнеры */
+section, header, footer {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Сделаем контент не шире экрана */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Навигация */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Кнопки */
+button, .join-button, .contact-btn {
+  font-size: 18px;
+  padding: 14px 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Форма */
+form input, form textarea {
+  font-size: 16px;
+}
+
+/* Адаптация под экраны ≤ 600px */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 90%;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
