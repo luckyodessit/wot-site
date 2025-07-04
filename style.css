@@ -69,3 +69,20 @@ footer {
 .quotes li {
   margin-bottom: 10px;
 }
+
+.join-button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #e60000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #ff3333;
+}
